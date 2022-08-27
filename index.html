@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href=".\assets\styles.css" />
     <title>Coding Quiz</title>
-
 </head>
 
 <body>
-    <div>
-        <a href="highscores.html">View Highscores</a>
-    </div>
-    <div>Time:<span>0</span></div>
 
-    <div>
+    <header>
+        <a href="highscores.html">View Highscores</a>
+        <div>Time:<span id="timeDisplay">0</span></div>
+    </header>
+
+    <main id="startScreen">
         <h1>Coding Quiz</h1>
-        <p>
-            Answer the following coding questions before time runs out!
-        </p>
-        <button>Start!</button>
-    </div>
+        <p>Answer the following coding questions before time runs out!</p>
+        <button onclick="runQuiz()">Start!</button>
+    </main>
+
+    <section id="theGame">
+        <h1 id="qDisplay"></h1>
+        <div id="optionsDiv"></div>
+    </section>
+
+    <section id="finScreen">
+        <h1>Quiz Concluded</h1>
+        <p>Your final score is <span id="finalScore">0</span>.</p>
+        <p>Enter Initials Here:</p><br>
+        <input id="usrInitials" type="text">
+        <button onclick="save()">Submit</button>  
+    </section>
+
+    <script src=".\assets\script.js"></script>
 
 </body>
 

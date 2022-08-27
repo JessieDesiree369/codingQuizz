@@ -1,0 +1,16 @@
+#startScreen {
+    text-align: center;
+}
+
+#finScreen {
+    display: none;
+    text-align: center;
+}
+
+#theGame {
+    display: none;
+}
+
+#choices {
+
+}
