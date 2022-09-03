@@ -11,19 +11,24 @@
 <body>
 
     <header>
-        <a href="highscores.html">View Highscores</a>
+        <a href="highscores.html">Highscores Page</a>
         <div>Time:<span id="timeDisplay">0</span></div>
     </header>
 
     <main id="startScreen">
         <h1>Coding Quiz</h1>
-        <p>Answer the following coding questions before time runs out!</p>
+        <p>Can you answer the questions before time runs out?</p>
         <button onclick="runQuiz()">Start!</button>
     </main>
 
     <section id="theGame">
         <h1 id="qDisplay"></h1>
-        <div id="optionsDiv"></div>
+        <div id="optionsDiv">
+            <button id="abtn1"></button>
+            <button id="abtn2"></button>
+            <button id="abtn3"></button>
+            <button id="abtn4"></button>
+        </div>
     </section>
 
     <section id="finScreen">

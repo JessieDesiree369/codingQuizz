@@ -9,8 +9,9 @@
 
 #theGame {
     display: none;
+    text-align: center;
 }
 
-#choices {
-
+#hs {
+    text-align: center;
 }
