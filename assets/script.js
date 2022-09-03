@@ -4,9 +4,9 @@ var optionsDiv = document.getElementById("optionsDiv")
 var showTime = document.getElementById("timeDisplay")
 
 var optn1 = document.getElementById("abtn1")
-var optn1 = document.getElementById("abtn2")
-var optn1 = document.getElementById("abtn3")
-var optn1 = document.getElementById("abtn4")
+var optn2 = document.getElementById("abtn2")
+var optn3 = document.getElementById("abtn3")
+var optn4 = document.getElementById("abtn4")
 
 var questionIndex = 0;
 
@@ -62,12 +62,14 @@ function runQuiz() {
 }
 
 var displayQandAs = function () {
-  // ask question
+// ask question
   var askingRN = theQuestions[questionIndex];
   qDisplay.innerText = askingRN.question
-  // show corresponding questions !!!NOT WORKING YET!!!
-  optn1.textContent = askingRN[options][0];
-  console.log(optn1)
+// show corresponding answer options
+  optn1.innerHTML = askingRN.options[0];
+  optn2.innerHTML = askingRN.options[1];
+  optn3.innerHTML = askingRN.options[2];
+  optn4.innerHTML = askingRN.options[3];
 };
 
 
