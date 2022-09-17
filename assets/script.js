@@ -1,8 +1,9 @@
-let initials = document.getElementById("usrInitials")
+// let initials = document.getElementById("usrInitials")
 var qDisplay = document.getElementById("qDisplay")
 var optionsDiv = document.getElementById("optionsDiv")
 var showTime = document.getElementById("timeDisplay")
 var finalScore = document.getElementById("finalScore")
+var hsList = document.getElementById("hsList")
 
 var optn1 = document.getElementById("abtn1")
 var optn2 = document.getElementById("abtn2")
@@ -90,22 +91,42 @@ function displayQandAs() {
 };
 
 function evaluate() {
-  //if guessed right answer
+  //if correct add points
   if (this.value === askingRN.answer) {
-    // add points
     scoreCount = scoreCount + 5;
     finalScore.innerText = scoreCount
   } else {
-    /// TO DO time penalty if guessed wrong***
+    /// time penalty if wrong
     timelft -= 9;
     console.log("incorrect");
   }
   //next question if any remain
   if (questionIndex > 3) {
-    //show initials input screen
+    //show game over screen
     quizFin()
   } else {
     questionIndex++;
   }
   displayQandAs();
 }
+
+  //TODO:
+//var scoreCount = localStorage.getItem("scoreCount");
+//var initials = localStorage.getItem("initials");
+
+// function scoreStore() {
+//   var initials = document.getElementById("usrInitials").value;
+//   window.localStorage.setItem("scoreCount", scoreCount)
+//   window.localStorage.setItem("initials", initials)
+//   // var hsEl = document.body.div.createElement("div");
+//   // hsList.appendChild(hsEl);
+//   // hsEl.textContent= (initials + " " + scoreCount);
+//   // window.location.href = "highscores.html";
+// }
+
+
+//get score & initials on hs page
+
+//redirect to hs page
+
+//need new variable for local storage data
