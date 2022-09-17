@@ -1,9 +1,8 @@
-## Acceptance Criteria
+## Acceptance Criteria Completed
 ```
 GIVEN I am taking a code quiz
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
-
 WHEN I answer a question
 THEN I am presented with another question
 WHEN all questions are answered 
@@ -12,7 +11,8 @@ THEN the game is over
 WHEN I answer a question incorrectly
 THEN time is subtracted from the clock
 
-
+## To Do
 WHEN the game is over
 THEN I can save my initials and my score
 
+Link: https://jessiedesiree369.github.io/codingQuizz/
